@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 - CSS Borders</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            padding: 25px;
+        }
+
+        h1, h2 {
+            color: #1d4ed8;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 12px;
+            width: 220px;
+            background: white;
+        }
+
+        /* Exercise 1 */
+        .solid {
+            border: 4px solid blue;
+        }
+
+        .dotted {
+            border: 4px dotted green;
+        }
+
+        .dashed {
+            border: 4px dashed red;
+        }
+
+        .double {
+            border: 6px double purple;
+        }
+
+        .groove {
+            border: 6px groove orange;
+        }
+
+        /* Exercise 2 */
+        .radius0  { border-radius: 0px; }
+        .radius5  { border-radius: 5px; }
+        .radius15 { border-radius: 15px; }
+        .radius30 { border-radius: 30px; }
+
+        /* Exercise 3 */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #2563eb;
+            background: #bfdbfe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        /* Exercise 4 */
+        .shadow-normal {
+            box-shadow: 5px 5px 5px gray;
+        }
+
+        .shadow-blur {
+            box-shadow: 5px 5px 15px gray;
+        }
+
+        .shadow-spread {
+            box-shadow: 0 0 10px 5px #93c5fd;
+        }
+
+        .shadow-inset {
+            box-shadow: inset 0 0 12px gray;
+        }
+
+        /* Exercise 5 */
+        .text-shadow {
+            font-size: 36px;
+            color: #2563eb;
+            text-shadow: 2px 2px 6px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lab 8: CSS Borders</h1>
+
+    <h2>Exercise 1: Border Styles</h2>
+    <div class="box solid">Solid Border</div>
+    <div class="box dotted">Dotted Border</div>
+    <div class="box dashed">Dashed Border</div>
+    <div class="box double">Double Border</div>
+    <div class="box groove">Groove Border</div>
+
+    <h2>Exercise 2: Border Radius Scale</h2>
+    <div class="box radius0" style="border: 2px solid;">Radius 0px</div>
+    <div class="box radius5" style="border: 2px solid;">Radius 5px</div>
+    <div class="box radius15" style="border: 2px solid;">Radius 15px</div>
+    <div class="box radius30" style="border: 2px solid;">Radius 30px</div>
+
+    <h2>Exercise 3: Circle Avatar</h2>
+    <div class="avatar"></div>
+
+    <h2>Exercise 4: Box Shadow Depth</h2>
+    <div class="box shadow-normal">Normal Shadow</div>
+    <div class="box shadow-blur">Blurred Shadow</div>
+    <div class="box shadow-spread">Spread Shadow</div>
+    <div class="box shadow-inset">Inset Shadow</div>
+
+    <h2>Exercise 5: Text Shadow</h2>
+    <h1 class="text-shadow">CSS Text Shadow</h1>
+</body>
+</html>
